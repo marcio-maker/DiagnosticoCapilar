@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diagnóstico Capilar Premium | Hair by Márcio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+  <div class="container">
+    <div class="logo">
+      <a href="#" class="logo-link">
+        <span class="logo-text">Hair by Márcio</span>
+      </a>
+    </div>
+
+      <nav class="nav">
+        <a href="#diagnostico" class="nav-link active">Diagnóstico</a>
+        <a href="#servicos" class="nav-link">Serviços</a>
+        <a href="#contato" class="nav-link">Contato</a>
+      </nav>
+      <button class="mobile-menu-button" aria-label="Menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </header>
+
+   <section id="diagnostico" class="hero">
+    <div id="threejs-bubbles"></div> <!-- Container para o Three.js -->
+    <div class="container hero-content">
+      <h1 class="hero-title">Diagnóstico Capilar <span>Premium</span></h1>
+      <p class="hero-subtitle">Descubra os melhores tratamentos profissionais</p>
+      <button class="hero-button" id="startQuizButton" aria-label="Iniciar questionário de diagnóstico">
+  Iniciar Quiz
+</button>
+    </div>
+  </section>
+
+  <main id="quiz-container" class="hidden">
+    <div id="app"></div>
+  </main>
+
+  <footer id="contato" class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="logo-text">Hair by Márcio</span>
+          <p class="footer-text">Cuidados especializados para seu cabelo</p>
+        </div>
+        <div class="footer-contact">
+          <h3 class="footer-title">Contato</h3>
+          <p class="footer-text"><i data-lucide="phone"></i> (XX) XXXX-XXXX</p>
+          <p class="footer-text"><i data-lucide="mail"></i> contato@hairbymarcio.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2023 Hair by Márcio. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="bubbles.js"></script>
+<script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+  <script src="bubbles.js"></script>
+  <script src="script.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
